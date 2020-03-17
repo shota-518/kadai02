@@ -1,35 +1,45 @@
 <?php
-echo 'hello php!';
 
-$a=3;
-$b=7;
-echo $a + $b;
-
-$array_month = ["1月","2月","3月","4月","5月","6月","7月","8月","9月","9月","10月","11月","12月"];
-echo $array_month[7];
-
-$hello = "Hello,";
-$name = "shota";
-$world = "s World!";
-echo $hello.$name.$world;
-
-$tech_boost = "tech";
-$tech_boost .= " boost";
-echo $tech_boost;
-
-$calendar = [
-  "January" => "1月",
-  "February" => "2月",
-  "March" => "3月",
-  "April" => "4月",
-  "May" => "5月",
-  "June" => "6月",
-  "July" => "7月",
-  "August" => "8月",
-  "September" => "9月",
-  "October" => "10月",
-  "November" => "11月",
-  "December" => "12月"
- ];
+$height = 140;
+if ($height < 150) {
+  echo "150cm 未満の方はご乗車できません";
+  }
+  
+if ($height <= 200) {
+  echo "あなたは151以上で200以下です";
+  }
+else {
+  echo "ご乗車になれます";
+}
  
-echo $calendar["December"];
+if ($height < 150) {
+  echo "150cm 未満の方はご乗車できません";
+}
+if ($height < 150 && $height >=200) {
+  echo "200cn 以上の方はご乗車できません";
+}else {
+   echo "ご乗車になれます";
+}
+
+
+
+
+
+
+
+
+
+
+
+$weekday = "木曜";
+switch ($weekday) {
+  case "月曜":
+    echo "可燃ごみの日です。";
+    break;
+  case "水曜":
+    echo "資源ごみの日です";
+    break;
+  default:
+    echo "改修はありません。";
+    break;
+}
